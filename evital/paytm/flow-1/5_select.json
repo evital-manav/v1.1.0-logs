@@ -1,0 +1,63 @@
+{
+    "headers": {
+        "x-forwarded-for": "65.1.48.245",
+        "x-forwarded-proto": "https",
+        "x-forwarded-port": "443",
+        "host": "dev-ondc.evitalrx.in",
+        "x-amzn-trace-id": "Root=1-64b9431c-27a35d76302f9c7704a90879",
+        "content-length": "738",
+        "accept": "text/plain, application/json, application/*+json, */*",
+        "content-type": "application/json",
+        "authorization": "Signature keyId=\"ondc-staging.paytm.com|987da817-d715-4268-b5eb-e881c28681df|ed25519\",algorithm=\"ed25519\",created=\"1689862940\",expires=\"1690462940\",headers=\"(created) (expires) digest\",signature=\"XEIO7IkzWid6EUT+FZoycJAOMBVpN36CgopUzh5KrYTlXUvi8+rYSFKQqQSj/wgCkfrAAgHfBRguJzDHGHgPCg==\"",
+        "user-agent": "Java/1.8.0_212"
+    },
+    "body": {
+        "context": {
+            "domain": "nic2004:52110",
+            "action": "select",
+            "country": "IND",
+            "city": "std:080",
+            "core_version": "1.1.0",
+            "bap_id": "ondc-staging.paytm.com",
+            "bap_uri": "https://ondc-staging.paytm.com/retail",
+            "transaction_id": "7356d223-af36-4a32-b915-825df078f0be",
+            "message_id": ":SentTimeStamp:1689862940487:",
+            "timestamp": "2023-07-20T14:22:20.487Z",
+            "bpp_id": "dev-ondc.evitalrx.in",
+            "bpp_uri": "https://dev-ondc.evitalrx.in/"
+        },
+        "message": {
+            "order": {
+                "provider": {
+                    "id": "XTGvKjq5Kv+Ybrn3YY7smw==",
+                    "locations": [
+                        {
+                            "id": "XTGvKjq5Kv+Ybrn3YY7smw=="
+                        }
+                    ]
+                },
+                "items": [
+                    {
+                        "id": "lxomkrXjeoO9jqJrt+6yIA==",
+                        "location_id": "XTGvKjq5Kv+Ybrn3YY7smw==",
+                        "quantity": {
+                            "count": 1
+                        }
+                    }
+                ],
+                "fulfillments": [
+                    {
+                        "end": {
+                            "location": {
+                                "gps": "12.97555687,77.40888535",
+                                "address": {
+                                    "area_code": "560008"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

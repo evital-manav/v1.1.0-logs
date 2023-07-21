@@ -1,0 +1,97 @@
+{
+    "url": "https://ondc-staging.paytm.com/retail/on_select",
+    "header": {
+        "Authorization": "Signature keyId=\"dev-ondc.evitalrx.in|effcc10c-3318-4a1f-9996-89804f5c9a69|ed25519\",algorithm=\"ed25519\",created=\"1689917451\",expires=\"1689921651\",headers=\"(created) (expires) digest\",signature=\"zhicBFS0b+jqZZbCoFAXRp7qyijco4gmkJ7Ge0csgKcKBiYFcJgvlKo+vXF8wuR2OQ0w3v00aTNNnV5pcA18CQ==\"",
+        "content-type": "application/json",
+        "accept": "application/json"
+    },
+    "body": {
+        "context": {
+            "action": "on_select",
+            "timestamp": "2023-07-21T05:35:51.138Z",
+            "domain": "nic2004:52110",
+            "bpp_id": "dev-ondc.evitalrx.in",
+            "bpp_uri": "https://dev-ondc.evitalrx.in/",
+            "country": "IND",
+            "city": "std:080",
+            "core_version": "1.1.0",
+            "ttl": "PT30S",
+            "transaction_id": "0d21e8d8-58bd-4f72-a2e4-aaed19b3935c",
+            "message_id": ":SentTimeStamp:1689917751020:",
+            "bap_id": "ondc-staging.paytm.com",
+            "bap_uri": "https://ondc-staging.paytm.com/retail",
+            "key": "uutMeFk16yHrCm38TEUsLe2hN6aDDUlMIyFPlKXadfw="
+        },
+        "message": {
+            "order": {
+                "provider": {
+                    "id": "XTGvKjq5Kv+Ybrn3YY7smw=="
+                },
+                "items": [
+                    {
+                        "fulfillment_id": "1",
+                        "id": "T7vpV6qjN6gzVRvnwD8nnQ=="
+                    }
+                ],
+                "fulfillments": [
+                    {
+                        "id": "1",
+                        "@ondc/org/provider_name": "Monika Medical Loose Master Admin",
+                        "tracking": false,
+                        "@ondc/org/category": "Same Day Delivery",
+                        "@ondc/org/TAT": "P1D",
+                        "state": {
+                            "descriptor": {
+                                "code": "Serviceable"
+                            }
+                        }
+                    }
+                ],
+                "quote": {
+                    "price": {
+                        "currency": "INR",
+                        "value": "75"
+                    },
+                    "breakup": [
+                        {
+                            "@ondc/org/item_id": "T7vpV6qjN6gzVRvnwD8nnQ==",
+                            "@ondc/org/item_quantity": {
+                                "count": 5
+                            },
+                            "title": "MamyPoko Standard Pants Large",
+                            "@ondc/org/title_type": "item",
+                            "price": {
+                                "currency": "INR",
+                                "value": "25"
+                            },
+                            "item": {
+                                "quantity": {
+                                    "available": {
+                                        "count": "15"
+                                    },
+                                    "maximum": {
+                                        "count": "15"
+                                    }
+                                },
+                                "price": {
+                                    "currency": "INR",
+                                    "value": "5"
+                                }
+                            }
+                        },
+                        {
+                            "@ondc/org/item_id": "1",
+                            "title": "Delivery Charge",
+                            "@ondc/org/title_type": "delivery",
+                            "price": {
+                                "currency": "INR",
+                                "value": "50"
+                            }
+                        }
+                    ],
+                    "ttl": "PT8H"
+                }
+            }
+        }
+    }
+}

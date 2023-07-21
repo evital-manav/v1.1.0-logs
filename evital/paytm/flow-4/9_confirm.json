@@ -1,0 +1,180 @@
+{
+    "headers": {
+        "x-forwarded-for": "65.1.48.245",
+        "x-forwarded-proto": "https",
+        "x-forwarded-port": "443",
+        "host": "dev-ondc.evitalrx.in",
+        "x-amzn-trace-id": "Root=1-64ba1978-2b92fe322ff3e5230da5dd56",
+        "content-length": "2732",
+        "accept": "text/plain, application/json, application/*+json, */*",
+        "content-type": "application/json",
+        "authorization": "Signature keyId=\"ondc-staging.paytm.com|987da817-d715-4268-b5eb-e881c28681df|ed25519\",algorithm=\"ed25519\",created=\"1689917816\",expires=\"1690517816\",headers=\"(created) (expires) digest\",signature=\"VWSBqnt857kG2lA+ari9/7OOQUkTxTUJ1dwtpUuNLik1OoDlzCeiw9dBcWUsbBP7bNQDKvRW3eVVjJ+qK79lDQ==\"",
+        "user-agent": "Java/1.8.0_212"
+    },
+    "body": {
+        "context": {
+            "domain": "nic2004:52110",
+            "action": "confirm",
+            "country": "IND",
+            "city": "std:080",
+            "core_version": "1.1.0",
+            "bap_id": "ondc-staging.paytm.com",
+            "bap_uri": "https://ondc-staging.paytm.com/retail",
+            "transaction_id": "0d21e8d8-58bd-4f72-a2e4-aaed19b3935c",
+            "message_id": ":SentTimeStamp:1689917816305:",
+            "timestamp": "2023-07-21T05:36:56.124Z",
+            "bpp_id": "dev-ondc.evitalrx.in",
+            "bpp_uri": "https://dev-ondc.evitalrx.in/"
+        },
+        "message": {
+            "order": {
+                "id": "C135CAF966B6CA6B4DBAD8C17BE322C5",
+                "items": [
+                    {
+                        "id": "T7vpV6qjN6gzVRvnwD8nnQ==",
+                        "quantity": {
+                            "count": 3
+                        },
+                        "fulfillment_id": "1"
+                    }
+                ],
+                "billing": {
+                    "name": "Manav Patel",
+                    "address": {
+                        "building": "b-204, RK apartment",
+                        "name": "Manav Patel",
+                        "locality": "3rd cross road",
+                        "city": "Bengaluru",
+                        "state": "Karnataka",
+                        "country": "India",
+                        "area_code": "560008"
+                    },
+                    "email": "",
+                    "phone": "7043120038",
+                    "created_at": "2023-07-21T05:36:20.708Z",
+                    "updated_at": "2023-07-21T05:36:20.708Z"
+                },
+                "provider": {
+                    "id": "XTGvKjq5Kv+Ybrn3YY7smw==",
+                    "locations": [
+                        {
+                            "id": "XTGvKjq5Kv+Ybrn3YY7smw=="
+                        }
+                    ]
+                },
+                "fulfillments": [
+                    {
+                        "id": "1",
+                        "type": "Delivery",
+                        "tracking": true,
+                        "start": {
+                            "location": {
+                                "id": "XTGvKjq5Kv+Ybrn3YY7smw==",
+                                "descriptor": {
+                                    "name": "XTGvKjq5Kv+Ybrn3YY7smw=="
+                                },
+                                "gps": "12.9808934,77.4089686"
+                            },
+                            "time": {
+                                "range": {
+                                    "start": "2023-07-21T07:36:56.131Z",
+                                    "end": "2023-07-21T08:06:56.131Z"
+                                }
+                            },
+                            "instructions": {
+                                "name": "pick up instructions",
+                                "short_desc": "Provide the order id"
+                            },
+                            "contact": {
+                                "phone": "9876543210",
+                                "email": "ondc@gmail.com"
+                            }
+                        },
+                        "end": {
+                            "location": {
+                                "gps": "12.97555687,77.40888535",
+                                "address": {
+                                    "building": "b-204, RK apartment",
+                                    "name": "Manav Patel",
+                                    "locality": "3rd cross road",
+                                    "city": "Bengaluru",
+                                    "state": "Karnataka",
+                                    "country": "India",
+                                    "area_code": "560008"
+                                }
+                            },
+                            "time": {
+                                "range": {
+                                    "start": "2023-07-21T09:36:56.132Z",
+                                    "end": "2023-07-21T10:06:56.132Z"
+                                }
+                            },
+                            "instructions": {
+                                "name": "drop off instructions",
+                                "short_desc": "Leave at door step"
+                            },
+                            "contact": {
+                                "phone": "7043120038"
+                            },
+                            "person": {
+                                "name": "Manav Patel"
+                            }
+                        },
+                        "provider_id": "XTGvKjq5Kv+Ybrn3YY7smw=="
+                    }
+                ],
+                "quote": {
+                    "price": {
+                        "currency": "INR",
+                        "value": "65"
+                    },
+                    "breakup": [
+                        {
+                            "title": "MamyPoko Standard Pants Large",
+                            "price": {
+                                "currency": "INR",
+                                "value": "15"
+                            },
+                            "@ondc/org/title_type": "item",
+                            "item": {
+                                "price": {
+                                    "currency": "INR",
+                                    "value": "5"
+                                }
+                            },
+                            "@ondc/org/item_quantity": {
+                                "count": 3
+                            },
+                            "@ondc/org/item_id": "T7vpV6qjN6gzVRvnwD8nnQ=="
+                        },
+                        {
+                            "title": "Delivery Charge",
+                            "price": {
+                                "currency": "INR",
+                                "value": "50"
+                            },
+                            "@ondc/org/title_type": "delivery",
+                            "@ondc/org/item_id": "1"
+                        }
+                    ]
+                },
+                "payment": {
+                    "uri": "https://ondc.transaction.com/payment",
+                    "tl_method": "http/get",
+                    "params": {
+                        "currency": "INR",
+                        "transaction_id": "20230721010890000889105149745365191",
+                        "amount": "65"
+                    },
+                    "type": "ON-ORDER",
+                    "status": "PAID",
+                    "collected_by": "BAP",
+                    "@ondc/org/buyer_app_finder_fee_type": "percent",
+                    "@ondc/org/buyer_app_finder_fee_amount": "3"
+                },
+                "created_at": "2023-07-21T05:36:56.124Z",
+                "updated_at": "2023-07-21T05:36:56.124Z"
+            }
+        }
+    }
+}

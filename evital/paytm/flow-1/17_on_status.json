@@ -1,0 +1,199 @@
+{
+    "url": "https://ondc-staging.paytm.com/retail/on_status",
+    "header": {
+        "Authorization": "Signature keyId=\"dev-ondc.evitalrx.in|effcc10c-3318-4a1f-9996-89804f5c9a69|ed25519\",algorithm=\"ed25519\",created=\"1689862795\",expires=\"1689866995\",headers=\"(created) (expires) digest\",signature=\"n1FuIBire4APJ1vdl6/pikmngipyWdE8KXOk1FKajvrrwYkv6AbkXxUOtGhNPJPb7t755BIBGXJ8AyTHpKj7DQ==\"",
+        "content-type": "application/json",
+        "accept": "application/json"
+    },
+    "body": {
+        "context": {
+            "action": "on_status",
+            "timestamp": "2023-07-20T14:24:55.529Z",
+            "domain": "nic2004:52110",
+            "bpp_id": "dev-ondc.evitalrx.in",
+            "bpp_uri": "https://dev-ondc.evitalrx.in/",
+            "country": "IND",
+            "city": "std:080",
+            "core_version": "1.1.0",
+            "ttl": "PT30S",
+            "message_id": "7323f360-39a5-4370-ab2c-62ef72765fc1",
+            "transaction_id": "7356d223-af36-4a32-b915-825df078f0be",
+            "bap_id": "ondc-staging.paytm.com",
+            "bap_uri": "https://ondc-staging.paytm.com/retail",
+            "key": "uutMeFk16yHrCm38TEUsLe2hN6aDDUlMIyFPlKXadfw="
+        },
+        "message": {
+            "order": {
+                "id": "25C989738C780ED452B0F0F474139968",
+                "state": "Accepted",
+                "provider": {
+                    "id": "XTGvKjq5Kv+Ybrn3YY7smw==",
+                    "locations": [
+                        {
+                            "id": "XTGvKjq5Kv+Ybrn3YY7smw=="
+                        }
+                    ]
+                },
+                "items": [
+                    {
+                        "id": "T7vpV6qjN6gzVRvnwD8nnQ==",
+                        "fulfillment_id": "1",
+                        "quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
+                        "id": "lxomkrXjeoO9jqJrt+6yIA==",
+                        "fulfillment_id": "1",
+                        "quantity": {
+                            "count": 1
+                        }
+                    }
+                ],
+                "billing": {
+                    "name": "Manav Patel",
+                    "address": {
+                        "door": "Manav Patel  B-204, Rk Apartment",
+                        "building": "Manav Patel  B-204, Rk Apartment",
+                        "name": "home",
+                        "locality": "3rd Cross Road",
+                        "city": "Bangalore",
+                        "state": "Karnataka",
+                        "country": "IND",
+                        "area_code": "560008"
+                    },
+                    "email": "",
+                    "phone": "7043120038",
+                    "created_at": "2023-07-20T14:22:52.075Z",
+                    "updated_at": "2023-07-20T14:22:52.075Z"
+                },
+                "fulfillments": [
+                    {
+                        "id": "1",
+                        "@ondc/org/provider_name": "Monika Medical Loose Master Admin",
+                        "type": "Delivery",
+                        "tracking": false,
+                        "state": {
+                            "descriptor": {
+                                "name": "Order packed",
+                                "code": "Packed"
+                            }
+                        },
+                        "start": {
+                            "location": {
+                                "descriptor": {
+                                    "name": "Monika Medical Loose Master Admin",
+                                    "images": [
+                                        "https://ondc.evitalrx.in/images/pharmacylogo.png"
+                                    ]
+                                },
+                                "gps": "12.9808934,77.4089686"
+                            },
+                            "contact": {
+                                "phone": "9624590009",
+                                "email": ""
+                            }
+                        },
+                        "end": {
+                            "location": {
+                                "gps": "12.97555687,77.40888535",
+                                "address": {
+                                    "door": "Manav Patel  B-204, Rk Apartment",
+                                    "building": "Manav Patel  B-204, Rk Apartment",
+                                    "name": "home",
+                                    "locality": "3rd Cross Road",
+                                    "city": "Bangalore",
+                                    "state": "Karnataka",
+                                    "country": "IND",
+                                    "area_code": "560008"
+                                }
+                            },
+                            "contact": {
+                                "phone": "7043120038"
+                            }
+                        }
+                    }
+                ],
+                "quote": {
+                    "price": {
+                        "currency": "INR",
+                        "value": "305"
+                    },
+                    "breakup": [
+                        {
+                            "@ondc/org/item_id": "T7vpV6qjN6gzVRvnwD8nnQ==",
+                            "@ondc/org/item_quantity": {
+                                "count": 1
+                            },
+                            "title": "MamyPoko Standard Pants Large",
+                            "@ondc/org/title_type": "item",
+                            "price": {
+                                "currency": "INR",
+                                "value": "5"
+                            },
+                            "item": {
+                                "price": {
+                                    "currency": "INR",
+                                    "value": "5"
+                                }
+                            }
+                        },
+                        {
+                            "@ondc/org/item_id": "lxomkrXjeoO9jqJrt+6yIA==",
+                            "@ondc/org/item_quantity": {
+                                "count": 1
+                            },
+                            "title": "Dove Baby Lotion Rich Moisture",
+                            "@ondc/org/title_type": "item",
+                            "price": {
+                                "currency": "INR",
+                                "value": "250"
+                            },
+                            "item": {
+                                "price": {
+                                    "currency": "INR",
+                                    "value": "250"
+                                }
+                            }
+                        },
+                        {
+                            "title": "Delivery charges",
+                            "@ondc/org/title_type": "delivery",
+                            "price": {
+                                "currency": "INR",
+                                "value": "50"
+                            }
+                        }
+                    ]
+                },
+                "payment": {
+                    "uri": "https://ondc.transaction.com/payment",
+                    "tl_method": "http/get",
+                    "params": {
+                        "amount": "305",
+                        "currency": "INR"
+                    },
+                    "type": "ON-ORDER",
+                    "status": "PAID",
+                    "collected_by": "BAP",
+                    "@ondc/org/buyer_app_finder_fee_type": "percent",
+                    "@ondc/org/buyer_app_finder_fee_amount": "3",
+                    "@ondc/org/settlement_details": [
+                        {
+                            "settlement_counterparty": "seller-app",
+                            "settlement_phase": "sale-amount",
+                            "settlement_type": "neft",
+                            "settlement_bank_account_no": "921020012976061",
+                            "settlement_ifsc_code": "UTIB0003256",
+                            "beneficiary_name": "Equality Healthcare Pvt Ltd",
+                            "bank_name": "Axis Bank",
+                            "branch_name": "SABARMATI AHMEDABAD"
+                        }
+                    ]
+                },
+                "created_at": "2023-07-20T14:23:24.000Z",
+                "updated_at": "2023-07-20T14:23:24.000Z"
+            }
+        }
+    }
+}
